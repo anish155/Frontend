@@ -5,34 +5,31 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-  <div class="header">
-    <img src="img/logo.webp" alt="Xen X">
-  </div>
+  <div class="page">
+  <img src="img/med.jpg" alt="medical tools">
 
   <div class="SignupPage">
-    <h1 class="welcome">Signup Tab</h1>
-  </div>
+    <div class="PreAccess">
+      <h1 class="welcome">Signup Tab</h1>
+      <form action="">
+        <label for="fname">Username</label>
+        <input type="text" name="Username" id="fname" required>
 
-  <div class="PreAccess">
-    <form action="">
-      <label for="fname">Username</label><br>
-      <input type="text" name="Username" id="fname"><br>
-      
-      <label for="email">Email</label><br>
-      <input type="email" name="E-mail" id="email"><br>
-      
-      <label for="password">Password</label><br>
-      <input type="password" name="Password" id="password"><br>
-    </form>  
-  </div>
+        <label for="email">Email</label>
+        <input type="email" name="E-mail" id="email" required>
 
-  <div class="register">
-    <button onclick="showalert('Welcome Message','Hi Customer Welcome to the site!!')">
-      Sign Up
-    </button>
-  </div>
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="password" required>
 
+        <div class="register">
+          <button type="submit" onclick="showalert('Welcome Message','Hi Customer Welcome to the site!!')">
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
   <script src="javascript/hello.js"></script>
 </body>
 </html>

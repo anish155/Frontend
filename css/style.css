@@ -2,15 +2,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-img {
-    width: 30%;
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    border-radius: 100%;
-}
-
 .header {
     position: relative;
     border-bottom: 50px solid greenyellow;
@@ -19,7 +10,13 @@ img {
     height: 0;
     margin-bottom: 25px;
 }
-
+.header img {
+    width: 30%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 100%;
+}
 .header::after {
     content: '';
     position: absolute;
@@ -29,7 +26,21 @@ img {
     height: 5px;
     background-color: white;
 }
-
+.page{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+.page img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
 .LoginPage, .SignupPage {
     display: flex;
     flex-direction: column;
@@ -43,4 +54,71 @@ img {
 
 .Access, .register, .PreAccess {
     text-align: center;
+}
+/* Container for everything including the background */
+.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background image full-screen */
+.page img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+/* Center the form box */
+.SignupPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Transparent form box */
+.PreAccess {
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Center form elements inside box */
+.PreAccess form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields styling */
+.PreAccess input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Button styling */
+.register button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: aquamarine;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
 }
