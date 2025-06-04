@@ -1,22 +1,46 @@
-body{
-    margin:0;
-    padding:0;
+body {
+    margin: 0;
+    padding: 0;
 }
-.header{
+
+img {
+    width: 30%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 100%;
+}
+
+.header {
     position: relative;
     border-bottom: 50px solid greenyellow;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-    width:5000px;
-    height: 0 ;
+    border-left: 25px solid transparent;
+    width: 100%;
+    height: 0;
     margin-bottom: 25px;
 }
+
 .header::after {
     content: '';
     position: absolute;
-    top: 20px; /* Adjust position vertically */
+    top: 20px;
     left: 0;
     width: 100%;
-    height: 5px; /* Thickness of the line */
+    height: 5px;
     background-color: white;
+}
+
+.LoginPage, .SignupPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome {
+    text-align: center;
+    color: aquamarine;
+}
+
+.Access, .register, .PreAccess {
+    text-align: center;
 }
