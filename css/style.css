@@ -122,3 +122,27 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+.LoginPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.Access{
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  max-width: 400px;
+  width: 90%;
+}
+.Access{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
