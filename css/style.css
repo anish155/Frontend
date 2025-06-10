@@ -232,3 +232,39 @@ body {
 .message{
   text-align: center;
 }
+.shape1{
+  height:60px;
+  width:150px;
+  border-right: -20px;
+  border-left: -20px;
+  display:block;
+  position:relative;
+  justify-content: center;
+  background-color: #717171;
+  text-align: center;
+  border: 2px solid black;
+}
+.shape2{
+  height:60px;
+  width:150px;
+  border-right: -20px;
+  border-left: -20px;
+  display:block;
+  position:relative;
+  justify-content: center;
+  background-color: #717171;
+  text-align: center;
+  border: 2px solid black;
+}
+.shape3{
+  height:60px;
+  width:150px;
+  border-right: -20px;
+  border-left: -20px;
+  display:block;
+  position:relative;
+  justify-content: center;
+  background-color: #717171;
+  text-align: center;
+  border: 2px solid black;
+}
