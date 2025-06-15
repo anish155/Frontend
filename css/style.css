@@ -242,6 +242,7 @@ body {
   justify-content: center;
   background-color: #717171;
   text-align: center;
+  transform: skew(-20deg);
   border: 2px solid black;
 }
 .shape2{
@@ -268,3 +269,33 @@ body {
   text-align: center;
   border: 2px solid black;
 }
+.Page img{
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 1080px;
+  height: 730px ;
+}
+ .Content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.6); /* Transparent box */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .Content button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .Content button:hover {
+            background-color: #0056b3;
+        }
