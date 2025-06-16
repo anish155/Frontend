@@ -11,7 +11,40 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contract</a></li>
             </ul>
-            </div>
+        <div class="about-container">
+    <div class="slider-left">
+        <div class="slide fade">
+            <img src="img/ab1.jpeg" alt="">
         </div>
+        <div class="slide fade">
+            <img src="img/ab2.jpg" alt="">
+        </div>
+    </div>
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+            At Xen X, we're more than just a team—we're a community driven by creativity, passion, and a relentless pursuit of excellence. 
+            What started as a small idea has grown into a space where innovation meets purpose. 
+            We believe in crafting experiences that resonate, products that matter, and connections that last. 
+            Every pixel, every word, every interaction is designed with you in mind. 
+            Thank you for being part of our journey.
+        </p>
+    </div>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); 
+}
+</script>
     </body>
 </html>
