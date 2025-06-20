@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    background-color: #f4a7c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.cake {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* Drop-in animation */
+@keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Cake Layers */
+.layer {
+    background-color: #8B4513;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    opacity: 0;
+    transform: translateY(-200px);
+    animation: drop 0.6s ease-out forwards;
+}
+
+.layer1 {
+    animation-delay: 0.2s;
+}
+.layer2 {
+    animation-delay: 0.5s;
+}
+.layer3 {
+    animation-delay: 0.8s;
+}
+
+.icing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 200px;
+    background-color: #fff0f0;
+    border-radius: 100px / 50px;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-200px);
+    animation: drop 0.6s ease-out forwards;
+    animation-delay: 1.1s;
+}
+
+/* Candle */
+.candle {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, -200px);
+    width: 10px;
+    height: 50px;
+    background: white;
+    border-radius: 2px;
+    z-index: 3;
+    overflow: hidden;
+    opacity: 0;
+    animation: drop 0.6s ease-out forwards;
+    animation-delay: 1.4s;
+}
+
+.stripe {
+    height: 100%;
+    width: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        #ff6b6b,
+        #ff6b6b 3px,
+        white 3px,
+        white 6px
+    );
+}
+
+.flame {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 20px;
+    background: radial-gradient(circle, yellow 40%, orange 70%);
+    border-radius: 50% 50% 50% 50%;
+    opacity: 0;
+    animation: flameAppear 0.3s ease-out 2s forwards, flicker 0.2s infinite alternate 2.3s;
+}
+
+/* Flame fade-in after candle drops */
+@keyframes flameAppear {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    0%   { transform: translateX(-50%) scale(1); opacity: 1; }
+    50%  { transform: translateX(-50%) scale(1.1); opacity: 0.7; }
+    100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+
+
+/* Plate */
+.plate {
+    margin-top: 10px;
+    width: 200px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    margin: 10px auto 0;
+}
+
+/* Message */
+.message h1 {
+    margin-top: 30px;
+    color: #a83279;
+    font-size: 28px;
+    opacity: 0;
+    animation: drop 0.6s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+.icing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 200px;
+    background-color: #fff0f0;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-200px);
+    animation: drop 0.6s ease-out forwards;
+    animation-delay: 1.1s;
+    overflow: visible;
+}
+
+.drip {
+    position: absolute;
+    bottom: -15px;
+    width: 20px;
+    height: 25px;
+    background-color: #fff0f0;
+    border-radius: 50%;
+    animation: drop 0.6s ease-out forwards;
+    animation-delay: 1.1s;
+}
+
+/* Positioning the drips at various places */
+.drip1 {
+    left: 20px;
+    height: 22px;
+}
+
+.drip2 {
+    left: 80px;
+    height: 30px;
+    width: 24px;
+}
+
+.drip3 {
+    left: 150px;
+    height: 18px;
+    width: 18px;
+}
