@@ -1,0 +1,22 @@
+.about-context{
+    display: flex;
+    position: relative;
+    background-color: rgba(211, 211, 211, 0.3);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+.about-img{
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 3px;
+}
+.about-text p{
+    text-align: justify;
+    line-height: 2;
+    font-size: 25px;
+    font-weight: bolder;
+    color: lightgray;
+    -webkit-text-stroke: 1px black;
+}
