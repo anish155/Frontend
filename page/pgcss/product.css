@@ -27,16 +27,20 @@
     height: auto;
     margin-bottom: 10px;
 }
-
+.prod1-text{
+    background-color: white;
+}
 .prod1-text h3 {
     margin: 0;
     font-size: 14px;
     font-weight: bold;
+    padding:10px
 }
 
 .prod1-text p {
     margin: 5px 0 0;
     font-size: 12px;
+    padding: 20px;
 }
 
 .product2{
@@ -56,13 +60,87 @@
     margin-bottom: 10px;
 }
 
+.prod2-text {
+    background-color: white;
+}
+
 .prod2-text h3 {
     margin: 0;
     font-size: 14px;
     font-weight: bold;
+    padding:10px
 }
 
 .prod2-text p {
     margin: 5px 0 0;
     font-size: 12px;
+    padding: 20px;
+}
+
+.product3{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 210px;
+    width: 180px;
+}
+
+.prod3-img img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.prod3-text {
+    background-color: white;
+}
+
+.prod3-text h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding:10px
+}
+
+.prod3-text p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.product4{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 210px;
+    width: 180px;
+}
+
+.prod4-img img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.prod4-text {
+    background-color: white;
+}
+
+.prod4-text h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding:10px
+}
+
+.prod4-text p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    padding: 20px;
 }
