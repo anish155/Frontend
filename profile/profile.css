@@ -13,19 +13,22 @@ body{
     border: 5px solid white;
     border-radius: 10px;
     background-color: rgba(255,255,255,0.4);
-    width: 800px;
-    height:500px;
+    width: 400px;
+    height:200px;
     padding: 30px;
     margin: 20px;
     box-shadow: 10px 10px 5px lightgray;
+    gap: 30px;
 }
 
 .container h3{
     text-shadow: 2px 2px 5px red;
+    font-size: larger;
 }
 
 .container label{
     text-shadow: 2px 2px 5px blue;
+    font-size: larger;
 }
 .row {
   display: flex;
