@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY APP</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <div id="preloader">
+    <div class="loader">
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="triangle"></div>
+    </div>
+    </div>
+    <header>
+        <nav class="navigation">
+            <a href="#">HOME</a>
+            <a href="#">COMING SOON</a>
+        </nav>
+    </header>
+    <main>
+        <h1>WELCOME to the Beginning.</h1>
+        <p>The only place where our thoughts connect.</p>
+        <p>We become one and move together.</p>
+    </main>
+
+    <footer>
+        <p>&copy;--THE POINT-- @</p>
+    </footer>
+</body>
+<script>
+    
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            document.body.classList.add("loaded");
+        }, 5000); 
+    });
+</script>
+
+</html>
