@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black; 
+    overflow: hidden;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.stars::after {
+    content: "";
+    position: absolute;
+    top: -2000px;
+    width: 2px;
+    height: 2px;
+    background: white;
+
+    
+    box-shadow: 
+        100px 200px white, 300px 400px white, 500px 600px white, 700px 800px white,
+        900px 100px white, 1200px 300px white, 150px 700px white, 400px 900px white,
+        800px 1200px white, 1100px 400px white, 1300px 600px white, 1600px 800px white,
+        200px 1100px white, 600px 1300px white, 1000px 1500px white, 1400px 1700px white,
+        300px 1600px white, 700px 1800px white, 900px 1900px white, 1500px 1400px white;
+
+    animation: animStar 40s cubic-bezier(0.6, 0.05, 0.4, 1) infinite;
+    
+}
+
+
+@keyframes animStar {
+    from { transform: translateY(0); }
+    to   { transform: translateY(2000px); }
+}
+
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    z-index: 1;
+    color: white;
+}
+
+.box h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 250px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+input::placeholder {
+    color: #555;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    color: #1d976c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #1d976c;
+    color: white;
+}
