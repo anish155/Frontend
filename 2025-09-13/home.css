@@ -80,7 +80,14 @@ header{
     padding: 20px;
 }
 
-.navigation a {
+.navigation {
+    display: flex;
+    justify-content: space-between; /* pushes left and right apart */
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left a {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
@@ -88,7 +95,23 @@ header{
     transition: color 0.3s ease;
 }
 
-.navigation a:hover {
+.nav-left a:hover {
+    color: #333;
+}
+
+.nav-right .login-btn {
+    padding: 8px 18px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-right .login-btn:hover {
+    background: #fff;
     color: #333;
 }
 
